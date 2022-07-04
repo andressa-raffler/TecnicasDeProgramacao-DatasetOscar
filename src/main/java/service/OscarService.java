@@ -1,6 +1,5 @@
 package service;
 
-import model.AtorPremiado;
 import model.DadosOscar;
 
 import java.util.*;
@@ -8,7 +7,6 @@ import java.util.stream.Collectors;
 
 public class OscarService {
     private final List<DadosOscar> dadosOscar = new ArrayList<>();
-    private final List<AtorPremiado> atorPremiadoList = new ArrayList<>();
 
     public OscarService(List<DadosOscar> dadosOscarMale, List<DadosOscar> dadosOscarFemale) {
         dadosOscar.addAll(dadosOscarFemale);
