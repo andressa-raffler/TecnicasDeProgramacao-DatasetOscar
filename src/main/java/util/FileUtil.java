@@ -16,7 +16,6 @@ public class FileUtil<T> {
 
     public List<T> readFile(Function<String, T> mapper) throws IOException {
         var file = this.getClass().getClassLoader().getResourceAsStream(this.fileName);
-
         if (file == null) {
             throw new IllegalArgumentException("Arquivo não encontrado");
         }
